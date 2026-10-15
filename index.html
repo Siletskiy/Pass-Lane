@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pass Lane</title>
+    <style>
+      body {
+        margin: 0;
+        margin-top: 17px;
+        padding: 0;
+        font-size: 18px;
+        height: 100vh;
+        font-family: Roboto, Arial, sans-serif;
+        color: #ffffff;
+        background: url("background.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+      .container {
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .info {
+        background: #1325c2;
+        color: #ffffff;
+        padding: 10px;
+        border: 2px solid #3900e4;
+        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+        margin: 0 0 16px 0;
+        text-align: center;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+      .info * {
+        opacity: 1;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin: 22px 0 22px 0;
+      }
+      button {
+        background: #1325c2;
+        border: 2px solid #3900e4;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 22px;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-weight: 700;
+      }
+      p {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 24.88px;
+        text-align: left;
+        margin: 10px;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="logo.png"
+      width="160"
+      height="160"
+      style="display: block; margin: 0 auto 15px auto"
+    />
+    <div class="container">
+      <div class="info">
+<p>Pass Lane begins its runtime with a designated loading screen. When the loading stage concludes, the application delivers the operator to the primary menu, which provides routes into the central play module, a chapter grid with selectable stages, a results board with stored records, a shop panel with decorative sets, and the configuration section. A short instructional segment is also reachable from this menu and explains the control model before the first session.</p>
+<p>The central module of Pass Lane is arranged as a coaching board viewed from above. Spheres travel downward along drawn guide lines, and each line splits at junction points marked with arrow switches. The operator taps an arrow to flip its direction and must route every sphere toward the receiving marker of the matching color. Periodically a highlighted priority sphere with a countdown ring enters the field; delivering it before the ring empties is the leading objective of the session. Misrouted spheres interrupt the active streak, so sustained accuracy across multiple junctions defines the recorded result.</p>
+<p>Pass Lane offers two formats: an open practice mode where the session continues while routing remains faultless and the best run is written to the records board, and a sequence of staged assignments that each require a fixed number of consecutive correct deliveries. Units earned for completed deliveries are spent inside the shop panel to activate alternative appearances for the spheres and the drawing chalk. All records, stage marks, and activated sets are kept in local storage on the device.</p>
+<p>A separate options dialog within Pass Lane permits the operator to toggle sound output, erase all locally stored progression data, or return to the primary menu. When a session ends — whether by a misroute or an expired priority sphere — a closing dialog is rendered with structured choices: restart the current stage, proceed to the stage list, or step back to the primary menu.</p>
+      </div>
+      <div class="buttons">
+        <a href="passlane://menu" style="width: 100%; text-decoration: none;">
+          <button id="passlane">PLAY</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
